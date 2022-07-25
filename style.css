@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-image: radial-gradient(circle at -11.42% 44.63%, #ff7a46 0, #ff6d4a 12.5%, #ff5e4e 25%, #ff4d53 37.5%, #ff3858 50%, #fb1a5e 62.5%, #f70066 75%, #f1006f 87.5%, #ea0079 100%);
+}
+
+.main-inicio{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+
+.texto{
+    font-size: 100px;
+    font-family: 'Bungee', cursive;
+}
+
+.main-inicio, .texto, .navegador {
+    place-self: center;
+}
+
+.btn{
+    transform: translate(0%,-50%);
+    position: relative;
+    display: block;
+    color: black;
+    font-size: 30px;
+    font-family: "montserrat";
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid #ff7675;
+    padding: 14px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+  }
+  .btn::before{
+    background: #ff7675;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+  }
+  
+  .btn1::before{
+    width: 0%;
+    height: 100%;
+  }
+  
+  .btn1:hover::before{
+    width: 100%;
+  }
+
+  header h1{
+    width: 100vh;
+    font-size: 50px;
+    font-family: 'Bungee', cursive;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+main{
+    display: grid;
+    grid-template-rows: auto;
+    place-items: center;
+}
+
+.formulario{
+    font-size: 20px;
+    font-family: 'Bungee', cursive;
+    width: 70%;
+    margin: 0 auto;
+    place-items: center;
+}
+
+.formulario button{
+    font-size: 15px;
+    width: 300px;
+    height: 50px;
+}
+
+.intentos{
+    width: 100vh;
+    margin: 0 auto;
+    font-size: 25px;
+    font-family: 'Bungee', cursive;
+}
